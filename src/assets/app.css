@@ -1,0 +1,74 @@
+
+
+@tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+
+
+@font-face {
+    font-family: markpro;
+    src: url(/fonts/Mark-Pro.ttf)
+}
+
+@font-face {
+    font-family: markpro-black;
+    src: url(/fonts/MarkPro-Black.otf)
+}
+
+@font-face {
+    font-family: markpro-bold;
+    src: url(/fonts/Mark-Pro-Bold.otf)
+}
+
+@font-face {
+    font-family: markpro-medium;
+    src: url(/fonts/Mark-Pro-Mediun.otf)
+}
+
+@font-face {
+    font-family: FontsFree-Net-AlbraMedium;
+    src: url(/fonts/FontsFree-Net-AlbraMedium.ttf)
+}
+
+@font-face {
+    font-family: FontsFree-Net-AlbraBold;
+    src: url(/fonts/FontsFree-Net-AlbraBold.ttf)
+}
+
+.mkp-black {
+    font-family: markpro-black, sans-serif
+}
+
+.mkp-bold {
+    font-family: markpro-bold, sans-serif;
+    font-weight: 900
+}
+
+.mkp-medium {
+    font-family: markpro-medium, sans-serif;
+
+}
+
+.FontsFree-Net-AlbraMedium {
+    font-family: FontsFree-Net-AlbraMedium, sans-serif;
+
+}
+
+.FontsFree-Net-AlbraBold {
+    font-family: FontsFree-Net-AlbraBold, sans-serif;
+    font-weight: 900
+}
+
+.text-content {
+    flex: 1;
+}
+
+.left-column {
+    width: 50%;
+  }
+  .right-column {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
