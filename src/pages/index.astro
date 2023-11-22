@@ -10,27 +10,35 @@ import Card from '../components/Card.astro';
 		<header>
 			<Image src={Images.header} alt="Astro Logo" />
 		</header>
-		<div class="px-10 mx-auto md:px-40 mt-11">
-			<div class="grid grid-cols-2 gap-5">
+		<div class="px-10 mx-auto mt-16 md:px-40">
+			<div class="grid gap-5 md:grid-cols-2">
 				<div>
-					<h2 class="text-[4.75rem] mb-10 FontsFree-Net-AlbraBold text-[#414141]"><strong>adagio</strong> <span class="italic font-light ">bees</span></h2>
-					<h3  style='letter-spacing: 10px;' class="text-2xl mb-10 mkp-medium text-[#414141] tracking-widest font-light">NATURAL & HEALTHY</h3>
+					<Image src={Images.titulo} class:list={'mt-10'}  alt="Astro Logo" />
+					<div class="text-[#414141] mt-24 font-medium text-xl remove-br-mobile">
+						La miel es una excelente alternativa para endulzar el té, <br>
+						ya que posee vitaminas, propiedades antioxidantes y menos <br>
+						calorías que el azúcar. Esta realza, equilibra e incluso <br>
+						constrasta las notas y po ende el sabor del té. <br>
+						Añade una cucharadita de una de nuestras cuatros variedades <br>
+						de Adagio Bee y disfruta de sus beneficios, textura y sabor.
+					</div>
 				</div>
-				<div>
-
+				<div class="flex items-center justify-center ">
+					<Image src={Images.artisan} class:list={''}  alt="Astro Logo" />
 				</div>
 			</div>
 			
 		</div>
-		<div class="px-10 mx-auto md:px-40 mt-11">
-			<div class="grid grid-cols-2">
+		<div class="px-10 mx-auto mt-20 md:px-40">
+			<!-- 1 -->
+			<div class="grid md:grid-cols-2 remove-br-mobile">
 				<div class="">
-					<Image src={Images.abejaazul} width={61}  alt="Astro Logo" />
-					<h2 class="FontsFree-Net-AlbraMedium text-[#89AADD] text-3xl pt-5">miel de ulmo<br>
+					<Image src={Images.abejaazul} width={91}  alt="Astro Logo" />
+					<h2 class="FontsFree-Net-AlbraMedium text-[#21cacf] text-3xl pt-5 font-bold">miel de ulmo<br>
 						organico </h2>
 					<p class="mt-8 flex text-base mkp-medium leading-2 text-left text-[#414141]">Miel de color amarillo intenso cristalino, su dulzor es rescatado y su <br> textura muy cremosa.</p>
 	
-					<div class="mt-8 gap-6 pr-40 text-content  text-base mkp-medium flex flex-col gap-5 leading-2 text-left text-[#414141]">
+					<div class="mt-8 gap-6 md:pr-40 text-content  text-base mkp-medium flex flex-col gap-5 leading-2 text-left text-[#414141]">
 						<div>
 							<b>Origen único del sur del mundo:</b> La miel de Ulmo se recolecta a lo largo de la selva tropical de la isla de Chiloé́, que se encuentra al sur del Océano Pacífico y es mundialmente conocida por tener una naturaleza privilegiada donde abundan bosques, lagos  e impresionantes paisajes. Es un destino turístico atractivo para miles de turistas cada año.
 						</div>
@@ -50,156 +58,186 @@ import Card from '../components/Card.astro';
 					</div>
 					<div class="mt-6">
 						
-						<button class="mt-4 px-16 md:w-auto w-full font-bold text-[18px] bg-[#89AADD]  py-3 text-white">
+						<button class="mt-4 px-16 md:w-auto w-full font-bold text-[18px] bg-[#21cacf]  py-3 text-white">
 							MIEL DE ULMO
 						</button>
 						<h4 class="py-16 text-2xl font-bold">Te dejamos algunos recomendaciones perfectas <br> 
 						para disfrutar nuestra miel de ulmo organico</h4>
 
 						<div class="flex">
-							<Image src={Images.ulmo1}  class:list={'object-cover w-2/4'}   alt="Astro Logo" />
-							<Image src={Images.ulmo1}  class:list={'object-cover w-2/4'}   alt="Astro Logo" />
+							<Image src={Images.ulmo1}  class:list={'object-cover w-full'}   alt="Astro Logo" />
 						</div>
 					</div>
 				</div>
-				<div class="flex flex-col items-center justify-center">
-					<Image src={Images.hulmoorcanico} class:list={'md:w-[62%] h-auto mb-10'}   alt="Astro Logo" />
-					<Image src={Images.ulmonivel}    alt="Astro Logo" />
+				<div class="flex flex-col items-center justify-start object-none mt-10 md:pl-20 md:mt-0">
+					<div class="w-full">
+						<Image src={Images.hulmoorcanico} class:list={'md:w-[77%] w-full md:my-0 my-10 md:h-full  object-contain '}   alt="Astro Logo" />
+						<h3 class="flex items-center pt-1 my-2 text-[18px] font-bold text-[#414141]">INTENSIDAD  1|3 </h3>
+						<Image src={Images.ulmonivel}    alt="Astro Logo" />
+					</div>
 				</div>
 			</div>
-			<div class="grid grid-cols-2 mt-16">
-				<div class="flex flex-col items-center justify-center">
-					<Image src={Images.hiervaazul} class:list={'md:w-[62%] h-auto mb-10'}   alt="Astro Logo" />
-					<Image src={Images.ulmonivel}    alt="Astro Logo" />
+
+
+			<!-- 2 -->
+			<div class="grid md:grid-cols-2 mt-[12rem] mt-[4rem]">
+				<div class="flex flex-col items-center justify-start order-2 md:order-0 md:pl-20">
+					<div class="w-full">
+						<Image src={Images.hulmoorcanico} class:list={'md:w-[77%] w-full md:my-0 my-10 md:h-full  object-contain '}   alt="Astro Logo" />
+						<h3 class="flex items-center pt-1 my-2 text-[18px]  font-bold text-[#414141]">INTENSIDAD  1|3 </h3>
+						<Image src={Images.abeja3 }    alt="Astro Logo" />
+					</div>
 				</div>
-				<div class="">
-					<Image src={Images.hiervaazulabejita} width={61}  alt="Astro Logo" />
-					<h2 class="FontsFree-Net-AlbraMedium text-[#21CACF] text-3xl pt-5">miel de <br> hierba azul</h2>
-					<p class="mt-8 flex text-base mkp-medium leading-2 text-left text-[#414141]">Miel de color ambarina y dulzura intensa, especialmente cremosa <br> donde se perciben cristales finos.</p>
+				<div class="order-1 remove-br-mobile md:order-0">
+					<Image src={Images.abeja2} width={91}  alt="Astro Logo" />
+					<h2 class="FontsFree-Net-AlbraMedium text-[#89abdb] text-3xl pt-5">miel de ulmo<br>
+						organico </h2>
+					<p class="mt-8 flex text-base mkp-medium leading-2 text-left text-[#414141]">Miel de color amarillo intenso cristalino, su dulzor es rescatado y su <br> textura muy cremosa.</p>
 	
-					<div class="mt-8 gap-6 pr-40 text-content  text-base mkp-medium flex flex-col gap-5 leading-2 text-left text-[#414141]">
+					<div class="mt-8 gap-6 md:pr-40 text-content  text-base mkp-medium flex flex-col gap-5 leading-2 text-left text-[#414141]">
 						<div>
-							<b>Origen único del sur del mundo:</b> La miel de Ulmo se recolecta a lo largo de la selva tropical de la isla de Chiloé́, que se encuentra al sur del Océano Pacífico y es mundialmente conocida por tener una naturaleza privilegiada donde abundan bosques, lagos  e impresionantes paisajes. Es un destino turístico atractivo para miles de turistas cada año.
+							<b>Origen único del sur del mundo:</b> La flor de hierba azul se encuentra principalmente en las montañas de la VIII Región del Biobío, principalmente en los alrededores del volcán Antuco y la comuna de Santa Bárbara. También se puede obtener en zonas cordilleranas de la VII Región del Maule y la IX Región de la Araucanía
 						</div>
 						<div>
-							<b>Flores:</b> Ulmo
+							<b>Flores:</b> Hierba Azul
 						</div>
 						<div>
-							<b>Notas de Cata:</b> Es una miel de dulzura intensa, pero que no alcanza a saturar el paladar.
+							<b>Notas de Cata:</b> En la boca su dulzura recatada y su textura muy cremosa, disolviéndose casi inmediatamente.
+
 						</div>
 						<div>
-							<b>Maridaje:</b> Su potencia aromática y sabor único
+							<b>Maridaje:</b> Su delicadeza combina muy bien con pescados de gusto marcado, carnes suaves y ensaladas. Es una miel idónea para mezclar con infusiones, ya sea té, café u otras.
 						</div>
 						<div>
-						<b>Propiedades:</b> El árbol de ulmo se encuentra en la sureña Región de Los Lagos, principalmente en los interiores de la Isla de Chiloé.
+						<b>Propiedades:</b>  
+						  Refuerzo inmunológico - Supresor de la tos
+						- Luchador de alergias
+						- Ayuda a la digestión
+						- Refuerzo de energía.
 							
 						</div>
 					</div>
 					<div class="mt-6">
 						
-						<button class="mt-4 px-16 md:w-auto w-full font-bold text-[18px] bg-[#21CACF]  py-3 text-white">
-							MIEL DE ULMO
+						<button class="mt-4 px-16 md:w-auto w-full font-bold text-[18px] bg-[#89abdb]  py-3 text-white">
+							MIEL DE HIERBA AZUL 
 						</button>
 						<h4 class="py-16 text-2xl font-bold">Te dejamos algunos recomendaciones perfectas <br> 
-						para disfrutar nuestra miel de ulmo orgánica</h4>
+						para disfrutar nuestra miel de hierba azul</h4>
 
 						<div class="flex">
-							<Image src={Images.ulmo1}  class:list={'object-cover w-2/4'}   alt="Astro Logo" />
-							<Image src={Images.ulmo1}  class:list={'object-cover w-2/4'}   alt="Astro Logo" />
+							<Image src={Images.ulmo2}  class:list={'object-cover w-full'}   alt="Astro Logo" />
 						</div>
 					</div>
 				</div>
 				
 			</div>
-			<div class="grid grid-cols-2 mt-16">
-				<div class="">
-					<Image src={Images.hiervaazulabejita} width={61}  alt="Astro Logo" />
-					<h2 class="FontsFree-Net-AlbraMedium text-[#21CACF] text-3xl pt-5">miel de <br> hierba azul</h2>
-					<p class="mt-8 flex text-base mkp-medium leading-2 text-left text-[#414141]">Miel de color ambarina y dulzura intensa, especialmente cremosa <br> donde se perciben cristales finos.</p>
+
+			<!-- 3 -->
+			<div class="grid md:grid-cols-2 md:mt-[12rem] mt-[4rem]">
+				<div class="order-1 remove-br-mobile md:order-0">
+					<Image src={Images.abeja4} width={61}  alt="Astro Logo" />
+					<h2 class="FontsFree-Net-AlbraMedium text-[#C9A4DA] text-3xl pt-5 font-bold">miel de montaña<br>
+						orgánica </h2>
+					<p class="mt-8 flex text-base mkp-medium leading-2 text-left text-[#414141]">Miel de color amarillo intenso cristalino, su dulzor es rescatado y su <br> textura muy cremosa.</p>
 	
-					<div class="mt-8 gap-6 pr-40 text-content  text-base mkp-medium flex flex-col gap-5 leading-2 text-left text-[#414141]">
+					<div class="mt-8 gap-6 md:pr-40 text-content  text-base mkp-medium flex flex-col gap-5 leading-2 text-left text-[#414141]">
 						<div>
-							<b>Origen único del sur del mundo:</b> La miel de Ulmo se recolecta a lo largo de la selva tropical de la isla de Chiloé́, que se encuentra al sur del Océano Pacífico y es mundialmente conocida por tener una naturaleza privilegiada donde abundan bosques, lagos  e impresionantes paisajes. Es un destino turístico atractivo para miles de turistas cada año.
+							<b>Origen:</b> Miel de un origen único, recolectada en zonas ecológicas en medio de bosques nativos localizados en las altas montañas de la Cordillera de los Andes, a más de 1800 metros de altura.
 						</div>
 						<div>
-							<b>Flores:</b> Ulmo
+							<b>Flores:</b> Las flores endémicas de Corontillo, Littre y Maqui son las principales fuentes de recolección de las abejas para dar vida a esta miel exótica y equilibrada.
 						</div>
 						<div>
-							<b>Notas de Cata:</b> Es una miel de dulzura intensa, pero que no alcanza a saturar el paladar.
+							<b>Notas de Cata:</b> Su equilibrada dulzura con notas florales, y su aroma con marcado sabor frutal se disuelve en el fondo del paladar. Es una miel que llama la atención por su sabor exótico, que la hace incomparable a cualquier otro tipo de mieles.
 						</div>
 						<div>
-							<b>Maridaje:</b> Su potencia aromática y sabor único
+							<b>Maridaje:</b> Su delicado sabor con toques frutales es un buen complemento para 
 						</div>
-						<div>
-						<b>Propiedades:</b> El árbol de ulmo se encuentra en la sureña Región de Los Lagos, principalmente en los interiores de la Isla de Chiloé.
+						<div class="font-light">
+						<b>Propiedades:</b> 
+						<b>ENERGÍA NATURAL:</b> Previene anemias, cansancio, estrés en periodos de exámenes y entrenamientos intensos. <br>
+						<b>PIEL SUAVE:</b>  Demostrando efectos en el rostro y en las zonas del cuerpo con asperezas como codos, rodillas y pies.<br>
+						<b>HUESOS FUERTES:</b> Aumento del 33,6% en la absorción de calcio.<br>
+						<b>CONTRA LAS ALERGIAS:</b> Ayuda natural contra las alergias junto con polen y vinagre de manzana.<br>
+						<b>DIGESTIÓN:</b> Alimentación prebiótica, aumentando la población de flora bacteriana, aliviando dolores de quemazón y úlceras, mejorando la salud digestiva.<br>
+						<b>CONTRA LAS INFECCIONES:</b> Las propiedades antisépticas y cicatrizantes de la miel, previene las infecciones además de acelerar el proceso curativo de la piel dañada y quemada.<br>
+						<b>PARA UN CORAZÓN SANO:</b>  Ayuda a eliminar la retención de líquidos en los afectos del corazón.<br>
+						
+						<b>SUAVIZA LA GARGANTA :</b> Alivia los problemas de garganta al disminuir la inflamación y calmar la tos. 
 							
 						</div>
 					</div>
 					<div class="mt-6">
 						
-						<button class="mt-4 px-16 md:w-auto w-full font-bold text-[18px] bg-[#21CACF]  py-3 text-white">
-							MIEL DE ULMO
+						<button class="mt-4 px-16 md:w-auto w-full font-bold text-[18px] bg-[#C9A4DA]  py-3 text-white">
+							MIEL DE MONTAÑA
 						</button>
 						<h4 class="py-16 text-2xl font-bold">Te dejamos algunos recomendaciones perfectas <br> 
-						para disfrutar nuestra miel de ulmo orgánica</h4>
+						para disfrutar nuestra miel de montaña</h4>
 
 						<div class="flex">
-							<Image src={Images.ulmo1}  class:list={'object-cover w-2/4'}   alt="Astro Logo" />
-							<Image src={Images.ulmo1}  class:list={'object-cover w-2/4'}   alt="Astro Logo" />
+							<Image src={Images.ulmo3}  class:list={'object-cover w-full'}   alt="Astro Logo" />
 						</div>
 					</div>
 				</div>
-				<div class="flex flex-col items-center justify-center">
-					<Image src={Images.hiervaazul} class:list={'md:w-[62%] h-auto mb-10'}   alt="Astro Logo" />
-					<Image src={Images.ulmonivel}    alt="Astro Logo" />
+				<div class="flex flex-col items-center justify-start order-2 md:order-0 md:pl-20">
+					<div class="w-full">
+						<Image src={Images.imagen3} class:list={'md:w-[77%] w-full md:my-0 my-10 md:h-full  object-contain '}   alt="Astro Logo" />
+						<h3 class="flex items-center pt-1 my-2 text-[18px] font-bold text-[#414141]">INTENSIDAD  1|3 </h3>
+						<Image src={Images.abejaorcanica}    alt="Astro Logo" />
+					</div>
 				</div>
-				
-				
 			</div>
-			<div class="grid grid-cols-2 mt-16">
-				
-				<div class="flex flex-col items-center justify-center">
-					<Image src={Images.hiervaazul} class:list={'md:w-[62%] h-auto mb-10'}   alt="Astro Logo" />
-					<Image src={Images.ulmonivel}    alt="Astro Logo" />
+
+			<!-- 4 -->
+			<div class="grid md:grid-cols-2 md:mt-[12rem] mt-[4rem]">
+				<div class="flex flex-col items-center justify-start order-2 md:order-0 md:pl-20">
+					<div class="w-full">
+						<Image src={Images.imagen4} class:list={'md:w-[77%] md:my-0 my-10 md:h-full  object-contain'}   alt="Astro Logo" />
+						<h3 class="flex items-center pt-1 my-2 text-[18px]  font-bold text-[#414141]">INTENSIDAD  2|3 </h3>
+						<Image src={Images.quil }    alt="Astro Logo" />
+					</div>
 				</div>
-				<div class="">
-					<Image src={Images.hiervaazulabejita} width={61}  alt="Astro Logo" />
-					<h2 class="FontsFree-Net-AlbraMedium text-[#21CACF] text-3xl pt-5">miel de <br> hierba azul</h2>
-					<p class="mt-8 flex text-base mkp-medium leading-2 text-left text-[#414141]">Miel de color ambarina y dulzura intensa, especialmente cremosa <br> donde se perciben cristales finos.</p>
+				<div class="order-1 md:order-0 md:pl-20">
+					<Image src={Images.abeja5} width={91}  alt="Astro Logo" />
+					<h2 class="FontsFree-Net-AlbraMedium text-[#ACD792] text-3xl pt-5 font-bold">miel de quillay<br>
+						orgánica</h2>
+					<p class="mt-8 flex text-base mkp-medium leading-2 text-left text-[#414141]">Miel de color amarillo intenso cristalino, su dulzor es rescatado y su <br> textura muy cremosa.</p>
 	
-					<div class="mt-8 gap-6 pr-40 text-content  text-base mkp-medium flex flex-col gap-5 leading-2 text-left text-[#414141]">
+					<div class="mt-8 gap-6 md:pr-40 text-content  text-base mkp-medium flex flex-col gap-5 leading-2 text-left text-[#414141]">
 						<div>
-							<b>Origen único del sur del mundo:</b> La miel de Ulmo se recolecta a lo largo de la selva tropical de la isla de Chiloé́, que se encuentra al sur del Océano Pacífico y es mundialmente conocida por tener una naturaleza privilegiada donde abundan bosques, lagos  e impresionantes paisajes. Es un destino turístico atractivo para miles de turistas cada año.
+							<b>Origen:</b> El árbol de quillay se encuentra en los valles y montañas de la zona central de Chile, entre las IV y la VII región. Esta es la miel de la flor de Quillay.
 						</div>
 						<div>
-							<b>Flores:</b> Ulmo
+							<b>Flores:</b> Flor de Quillay
 						</div>
 						<div>
-							<b>Notas de Cata:</b> Es una miel de dulzura intensa, pero que no alcanza a saturar el paladar.
+							<b>Notas de Cata:</b> Una de las características más importantes de la miel de Quillay es su dulzura. Esta variedad de miel orgánica tiene una dulzura pronunciada que se hace más intensa en el fondo del paladar.
 						</div>
 						<div>
-							<b>Maridaje:</b> Su potencia aromática y sabor único
+							<b>Maridaje:</b>  Su particular sabor con tendencia a caramelo hace de la miel de quillay un complemento ideal para frutas y distintas variedades de postre.Esta miel chilena es perfecta para repostería así que puede ser usada para hacer recetas con miel o en todo momento en el que se quiera dar un toque extra de dulzura acaramelada al plato.
 						</div>
 						<div>
-						<b>Propiedades:</b> El árbol de ulmo se encuentra en la sureña Región de Los Lagos, principalmente en los interiores de la Isla de Chiloé.
-							
+						<b>Propiedades:</b>  
+							Es una miel rica en antioxidantes, de hecho se trata de una de las variedades con más poder antioxidante, esto ha sido estudiado y validado por la Universidad Católica de Chile. (Fuente: <a class="text-[#ACD792]" href="https://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0716-97602013000200009">https://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0716-97602013000200009</a>)
+							Además retrasa y previene el envejecimiento celular, ayuda a combatir los radicales libres consecuencia de la exposición a los rayos UV y la contaminación. Brinda energía rápida, ayuda en la prevención de resfriados y es una poderosa ayuda para el sistema inmune. Esta miel chilena es un superalimento increíble.
+							Además al contar con la certificación orgánica, es una miel que es libre de pesticidas y agroquímicos, resultando un producto 100% natural. 
 						</div>
 					</div>
 					<div class="mt-6">
 						
-						<button class="mt-4 px-16 md:w-auto w-full font-bold text-[18px] bg-[#21CACF]  py-3 text-white">
-							MIEL DE ULMO
+						<button class="mt-4 px-16 md:w-auto w-full font-bold text-[18px] bg-[#ACD792]  py-3 text-white">
+							MIEL DE QUILLAY ORGÁNICA
 						</button>
 						<h4 class="py-16 text-2xl font-bold">Te dejamos algunos recomendaciones perfectas <br> 
-						para disfrutar nuestra miel de ulmo orgánica</h4>
+						para disfrutar nuestra miel de quillay orgánica </h4>
 
 						<div class="flex">
-							<Image src={Images.ulmo1}  class:list={'object-cover w-2/4'}   alt="Astro Logo" />
-							<Image src={Images.ulmo1}  class:list={'object-cover w-2/4'}   alt="Astro Logo" />
+							<Image src={Images.ulmo4}  class:list={'object-cover w-full'}   alt="Astro Logo" />
 						</div>
 					</div>
 				</div>
-				
 				
 			</div>
 		</div>

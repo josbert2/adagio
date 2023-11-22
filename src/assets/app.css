@@ -76,3 +76,9 @@
   body{
     background-color: #FEF3ED;
   }
+
+@media (max-width: 768px) {
+    .remove-br-mobile br {
+        display: none;
+    }
+}
