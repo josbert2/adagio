@@ -6,11 +6,15 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
+	<main class="relative">
+
 		<header>
 			<Image src={Images.header} alt="Astro Logo" />
 		</header>
-		<div class="px-10 mx-auto mt-16 md:px-[7rem]">
+			
+		
+		<div class="swiper-pagination"></div>
+		<div class="px-10 mx-auto mt-16 md:px-[4rem]">
 			<div class="grid gap-5 md:grid-cols-2">
 				<div>
 					<Image src={Images.titulo} class:list={'mt-10'}  alt="Astro Logo" />
@@ -29,9 +33,9 @@ import Card from '../components/Card.astro';
 			</div>
 			
 		</div>
-		<div class="px-10 mx-auto mt-20 md:px-[7rem]">
+		<div class="px-10 mx-auto mt-20 md:px-[4rem]">
 			<!-- 1 -->
-			<div class="grid md:grid-cols-2 remove-br-mobile">
+			<div class="md:grid md:grid-cols-2 remove-br-mobile">
 				<div class="">
 					<Image src={Images.abejaazul} width={91}  alt="Astro Logo" />
 					<h2 class="FontsFree-Net-AlbraMedium text-[#21cacf] text-3xl pt-5 font-bold">miel de ulmo<br>
@@ -64,32 +68,70 @@ import Card from '../components/Card.astro';
 						<h4 class="py-16 text-2xl font-bold FontsFree-Net-AlbraMedium text-[#161616]">Te dejamos algunos recomendaciones perfectas <br> 
 						para disfrutar nuestra miel de ulmo organico</h4>
 
-						<div class="flex">
-							<Image src={Images.ulmo1}  class:list={'object-cover w-full'}   alt="Astro Logo" />
+						<div class=' mt-10 relative'>
+							<div class="swiper  ">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.miel1}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.miel2}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.miel3}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.miel4}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.miel5}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.miel6}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+    						<div class="swiper-button-next"></div>
 						</div>
 					</div>
 				</div>
 				<div class="flex flex-col items-center justify-start object-none mt-10 md:mt-0">
 					<div class="flex flex-col items-center w-auto md:pl-[120px] md:pb-10">
-						<Image src={Images.hulmoorcanico} class:list={' w-full md:my-0 my-10 md:h-full  object-contain '}   alt="Astro Logo" />
-						<div class="flex flex-col items-start w-full ">
+						<div class="flex flex-col items-end w-full md:mb-4">
 							<h3 class="flex items-center pt-1 my-2 text-[18px] font-bold text-[#414141]">INTENSIDAD  1|3 </h3>
 							<Image src={Images.ulmonivel}    alt="Astro Logo" />
 						</div>
+						<Image src={Images.hulmoorcanico} class:list={' w-full md:my-0 my-10 md:h-full  object-contain '}   alt="Astro Logo" />
+						
 					</div>
 				</div>
 			</div>
 
 
 			<!-- 2 -->
-			<div class="grid md:grid-cols-2 md:mt-[15rem] mt-[4rem]">
+			<div class="md:grid md:grid-cols-2 md:mt-[15rem] mt-[4rem]">
 				<div class="flex flex-col items-center justify-start order-2 md:order-none ">
 					<div class="flex flex-col items-center w-auto md:pr-[120px] md:pb-10">
-						<Image src={Images.hulmoorcanico} class:list={' w-full md:my-0 my-10 md:h-full  object-contain'}   alt="Astro Logo" />
-						<div class="flex flex-col items-start w-full ">
+						<div class="flex flex-col items-start mb-5 w-full ">
 							<h3 class="flex items-center pt-1 my-2 text-[18px]  font-bold text-[#414141]">INTENSIDAD  1|3 </h3>
 							<Image src={Images.abeja3 }    alt="Astro Logo" />
 						</div>
+						<Image src={Images.hulmoorcanico} class:list={' w-full md:my-0 my-10 md:h-full  object-contain'}   alt="Astro Logo" />
+						
 					</div>
 
 					
@@ -131,8 +173,44 @@ import Card from '../components/Card.astro';
 						<h4 class="py-16 text-2xl font-bold">Te dejamos algunos recomendaciones perfectas <br> 
 						para disfrutar nuestra miel de hierba azul</h4>
 
-						<div class="flex">
-							<Image src={Images.ulmo2}  class:list={'object-cover w-full'}   alt="Astro Logo" />
+						<div class=' mt-10 relative'>
+							<div class="swiper  ">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.hiervaazul1}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.hiervaazul2}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.hiervaazul3}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.hiervaazul4}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.hiervaazul5}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.hiervaazul6}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+    						<div class="swiper-button-next"></div>
 						</div>
 					</div>
 				</div>
@@ -140,7 +218,7 @@ import Card from '../components/Card.astro';
 			</div>
 
 			<!-- 3 -->
-			<div class="grid md:grid-cols-2 md:mt-[15rem] mt-[4rem]">
+			<div class="md:grid md:grid-cols-2 md:mt-[15rem] mt-[4rem]">
 				<div class="order-1 remove-br-mobile md:order-none">
 					<Image src={Images.abeja4} width={61}  alt="Astro Logo" />
 					<h2 class="FontsFree-Net-AlbraMedium text-[#C9A4DA] text-3xl pt-5 font-bold">miel de montaña<br>
@@ -182,18 +260,55 @@ import Card from '../components/Card.astro';
 						<h4 class="py-16 text-2xl font-bold">Te dejamos algunos recomendaciones perfectas <br> 
 						para disfrutar nuestra miel de montaña</h4>
 
-						<div class="flex">
-							<Image src={Images.ulmo3}  class:list={'object-cover w-full'}   alt="Astro Logo" />
+						<div class=' mt-10 relative'>
+							<div class="swiper  ">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.montana}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.montana2}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.montana3}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.montana4}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.montana5}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.montana6}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+    						<div class="swiper-button-next"></div>
 						</div>
 					</div>
 				</div>
 				<div class="flex flex-col items-center justify-start order-2 md:order-none ">
 					<div class="flex flex-col items-center w-auto md:pl-[120px] md:pb-10">
-						<Image src={Images.imagen3} class:list={' w-full md:my-0 my-10 md:h-full  object-contain '}   alt="Astro Logo" />
-						<div class="flex flex-col items-start w-full ">	
+						<div class="flex flex-col items-end mb-5 w-full ">	
 							<h3 class="flex items-center pt-1 my-2 text-[18px] font-bold text-[#414141]">INTENSIDAD  1|3 </h3>
 							<Image src={Images.abejaorcanica}    alt="Astro Logo" />
 						</div>
+						<Image src={Images.imagen3} class:list={' w-full md:my-0 my-10 md:h-full  object-contain '}   alt="Astro Logo" />
+						
 					</div>
 
 					
@@ -201,14 +316,18 @@ import Card from '../components/Card.astro';
 			</div>
 
 			<!-- 4 -->
-			<div class="grid md:grid-cols-2 md:mt-[15rem] mt-[4rem]">
+			<div class="md:grid md:grid-cols-2 md:mt-[15rem] mt-[4rem]">
+
+				
+
 				<div class="flex flex-col items-center justify-start order-2 md:order-none">
 					<div class="flex flex-col items-center w-auto md:pr-[120px] md:pb-10">
-						<Image src={Images.imagen4} class:list={'w-full md:my-0 my-10 md:h-full  object-contain '}   alt="Astro Logo" />
-						<div class="flex flex-col items-start w-full ">
+						<div class="flex flex-col items-start mb-5 w-full ">
 							<h3 class="flex items-center pt-1 my-2 text-[18px]  font-bold text-[#414141]">INTENSIDAD  2|3 </h3>
 							<Image src={Images.quil }    alt="Astro Logo" />
 						</div>
+						<Image src={Images.imagen4} class:list={'w-full md:my-0 my-10 md:h-full  object-contain '}   alt="Astro Logo" />
+						
 					</div>
 
 				</div>
@@ -246,8 +365,44 @@ import Card from '../components/Card.astro';
 						<h4 class="py-16 text-2xl font-bold">Te dejamos algunos recomendaciones perfectas <br> 
 						para disfrutar nuestra miel de quillay orgánica </h4>
 
-						<div class="flex">
-							<Image src={Images.ulmo4}  class:list={'object-cover w-full'}   alt="Astro Logo" />
+						<div class=' mt-10 relative'>
+							<div class="swiper  ">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.quillay}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.quillay2}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.quillay3}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.quillay4}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.quillay5}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									<div class="swiper-slide" >
+										<a href="" class="w-44 h-44">
+											<Image src={Images.quillay6}  class:list={'object-cover w-full h-full'}   alt="Astro Logo" />
+										</a>
+									</div>
+									
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+    						<div class="swiper-button-next"></div>
 						</div>
 					</div>
 				</div>
@@ -255,8 +410,23 @@ import Card from '../components/Card.astro';
 			</div>
 		</div>
 	</main>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script is:inline>
+	const itemsPerSlide = window.innerWidth < 768 ? 1 : 1;
+	new Swiper('.swiper', {
+		spaceBetween: 1,
+		slidesPerView: 3,
+		centeredSlides: true,
+		roundLengths: true,
+		spaceBetween: 20,
+		loop: true,
+		loopAdditionalSlides: 30,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev"
+		}	
+	})</script>
 </Layout>
 
-<style>
-	
-</style>
+

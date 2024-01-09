@@ -23,3 +23,48 @@ export { default as imagen4 } from './imagen4.png';
 export { default as quil } from './quil.png';
 
 export { default as artisan } from './artisan.png';
+
+
+
+
+
+
+
+
+
+// quillay 
+
+export { default as quillay } from './quillay/1.png';
+export { default as quillay2 } from './quillay/2.png';
+export { default as quillay3 } from './quillay/3.png';
+export { default as quillay4 } from './quillay/4.png';
+export { default as quillay5 } from './quillay/5.png';
+export { default as quillay6 } from './quillay/6.png';
+
+// montana
+
+export { default as montana } from './montana/1.png';
+export { default as montana2 } from './montana/2.png';
+export { default as montana3 } from './montana/3.png';
+export { default as montana4 } from './montana/4.png';
+export { default as montana5 } from './montana/5.png';
+export { default as montana6 } from './montana/6.png';
+
+// hiervaazul
+
+
+export { default as hiervaazul1 } from './hiervaazul/1.png';
+export { default as hiervaazul2 } from './hiervaazul/2.png';
+export { default as hiervaazul3 } from './hiervaazul/3.png';
+export { default as hiervaazul4 } from './hiervaazul/4.png';
+export { default as hiervaazul5 } from './hiervaazul/5.png';
+export { default as hiervaazul6 } from './hiervaazul/6.png';
+
+// miel 
+
+export { default as miel1 } from './miel/1.png';
+export { default as miel2 } from './miel/2.png';
+export { default as miel3 } from './miel/3.png';
+export { default as miel4 } from './miel/4.png';
+export { default as miel5 } from './miel/5.png';
+export { default as miel6 } from './miel/6.png';

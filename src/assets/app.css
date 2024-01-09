@@ -82,3 +82,29 @@
         display: none;
     }
 }
+
+
+  .swiper .swiper-slide-active{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.2) !important;
+  
+  }
+  .swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: 0 !important;
+    right: auto;
+  }
+
+  .swiper-button-next {
+    right: -10px !important;
+
+  }
+
+  @media (max-width: 768px) {
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 20px !important;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        left: -9px !important;
+        right: auto;
+    }
+  }
